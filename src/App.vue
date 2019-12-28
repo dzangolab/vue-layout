@@ -1,0 +1,34 @@
+<template>
+  <div id="app">
+    <Page
+      title="@dzangolab/vue-layout"
+      subtitle="A vue.js set of component for page layout."
+    />
+  </div>
+</template>
+
+<script>
+import Page from './components/Page.vue'
+
+export default {
+  name: 'app',
+  components: {
+    Page
+  }
+}
+</script>
+
+<style>
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+
+table {
+  width: 100%;
+}
+</style>
