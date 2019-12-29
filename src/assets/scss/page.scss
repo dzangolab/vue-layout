@@ -15,6 +15,7 @@ $loading-color: rgba(0, 0, 0, 0.15) !default;
   &__loading {
     color: $loading-color;
     text-align: center;
+    width: 100%;
   }
 
   &__notifications {
