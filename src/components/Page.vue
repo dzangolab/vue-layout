@@ -16,10 +16,12 @@
 
     <slot name="notifications" class="page__notifications" />
 
+    <Loading v-if="loading" />
     <div
-      :class="'page__content' + (contentClass ? ' ' + contentClass : '')">
-      <Loading v-if="loading" />
-      <slot name="content" v-else />
+      :class="'page__content' + (contentClass ? ' ' + contentClass : '')"
+      v-else
+    >
+      <slot name="content" />
     </div>
   </div>
 </template>
