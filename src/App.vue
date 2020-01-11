@@ -9,13 +9,14 @@
 </template>
 
 <script>
-import Page from './components/Page.vue'
+import {Page} from './components/Page.vue'
 
 export default {
-  name: 'app',
   components: {
     Page
-  }
+  },
+
+  name: 'app'
 }
 </script>
 
@@ -27,9 +28,5 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-}
-
-table {
-  width: 100%;
 }
 </style>
