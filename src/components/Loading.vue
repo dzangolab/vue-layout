@@ -1,6 +1,8 @@
 <template>
-  <div class="page__loading">
-    <font-awesome-icon :icon="['fas', 'spinner']" size="4x" spin />
+  <div class="c-loading">
+    <slot name="icon">
+      <font-awesome-icon :icon="['fas', 'spinner']" size="4x" spin />
+    </slot>
   </div>
 </template>
 

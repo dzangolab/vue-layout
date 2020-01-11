@@ -16,7 +16,7 @@
 
     <slot name="notifications" class="page__notifications" />
 
-    <Loading v-if="loading" />
+    <Loading class="page__loading" v-if="loading" />
     <div
       :class="'page__content' + (contentClass ? ' ' + contentClass : '')"
       v-else

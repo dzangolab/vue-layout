@@ -1,4 +1,4 @@
-$loading-color: rgba(0, 0, 0, 0.15) !default;
+$loading-color: rgba(0, 0, 0, 1) !default;
 
 .page {
   align-items: flex-start;
@@ -47,36 +47,6 @@ $loading-color: rgba(0, 0, 0, 0.15) !default;
           width: 100%;
         }
       }
-
-      &.list-move {
-        transition: transform 0.3s, opacity 0.4s;
-      }
-
-      &.list-item {
-        display: inline-block;
-        margin-right: 0.6rem;
-      }
-
-      &.list-enter-active, &.list-leave-active {
-        transition: opacity 0.4s;
-      }
-
-      &.list-enter, &.list-leave-to {
-        opacity: 0;
-      }
-
-      button {
-        &.close {
-          background: transparent;
-          border: 0;
-          cursor: pointer;
-          font-weight: bold;
-          line-height: 1;
-          opacity: 0.2;
-          padding: 0;
-          text-shadow: 0 1px 0 white;
-        }
-      }
     }
   }
 
@@ -100,4 +70,3 @@ $loading-color: rgba(0, 0, 0, 0.15) !default;
     }
   }
 }
-

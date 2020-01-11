@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <Page
+      :loading="true"
       title="@dzangolab/vue-layout"
       subtitle="A vue.js set of component for page layout."
     />
