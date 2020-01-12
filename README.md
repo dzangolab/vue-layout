@@ -104,10 +104,6 @@ Used to render the page's sub-title.
 
 Used to inject a toolbar in the page title area.
 
-### `notifications`
-
-Used to inject a toast or notification area in the page.
-
 ## Loading component
 
 The package includes a `Loading` component. This is displayed by the page component when its `loading` prop is set to `true`. The `Loading` component can be used independently inside any component.
