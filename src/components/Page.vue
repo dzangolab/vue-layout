@@ -14,10 +14,10 @@
       </template>
     </PageTitle>
 
-    <Loading class="page__loading" v-if="loading" />
+    <Loading class="page__loading" v-show="loading" />
     <div
       :class="'page__content' + (contentClass ? ' ' + contentClass : '')"
-      v-else
+      v-show="!loading"
     >
       <slot name="content" />
     </div>
