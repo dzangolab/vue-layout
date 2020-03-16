@@ -11,6 +11,7 @@
   "scripts": {
     "build": "vue-cli-service build --target lib --name layout ./src/index.js",
     "lint": "vue-cli-service lint",
+    "prepublish": "yarn run lint && yarn run build",
     "serve": "vue-cli-service serve",
     "test": "yarn run test:unit",
     "test:unit": "vue-cli-service test:unit"
