@@ -3,7 +3,7 @@
     <Page
       :loading="true"
       title="@dzangolab/vue-layout"
-      subtitle="A vue.js set of component for page layout."
+      subtitle="A vue.js set of components for page layout."
     />
   </div>
 </template>
