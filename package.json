@@ -1,6 +1,6 @@
 {
   "name": "@dzangolab/vue-layout",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "",
   "author": {
     "name": "Olivier Pichon",
@@ -21,37 +21,32 @@
     "prepare": "husky install"
   },
   "peerDependencies": {
-    "vue": "^2.6"
+    "vue": "^3.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^13.2",
     "@commitlint/config-conventional": "^13.2",
-    "@fortawesome/fontawesome-svg-core": "^1.2",
-    "@fortawesome/free-solid-svg-icons": "^5.15",
-    "@fortawesome/vue-fontawesome": "^2.0",
     "@vue/cli-plugin-babel": "^4.5",
     "@vue/cli-plugin-eslint": "^4.5",
     "@vue/cli-plugin-unit-jest": "^4.5",
     "@vue/cli-service": "^4.5",
+    "@vue/compiler-sfc": "^3.0",
+    "@vue/eslint-config-standard": "^6.1",
     "@vue/test-utils": "1.2",
-    "@vuedoc/md": "^3.2",
-    "@vuedoc/parser": "^3.4",
-    "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.0",
     "babel-jest": "^27.2",
-    "bootstrap": "^5.1",
+    "core-js": "^3.6",
     "eslint": "^7.32, < 8.0",
-    "eslint-plugin-import": "^2.22",
+    "eslint-plugin-import": "^2.20",
     "eslint-plugin-node": "^11.1",
     "eslint-plugin-promise": "^5.1",
-    "eslint-plugin-standard": "^5.0",
     "eslint-plugin-vue": "^7.7",
     "husky": "7.0",
     "node-sass": "^6.0",
     "sass-loader": "^10, < 11",
     "standard-version": "^9.3",
-    "vue": "^2.6",
-    "vue-template-compiler": "^2.6"
+    "vue": "^3.0",
+    "vue-router": "^4.0"
   },
   "files": [
     "*.json",
@@ -67,5 +62,8 @@
   "license": "MIT",
   "repository": "github:dzangolab/vue-layout",
   "homepage": "https://github.com/dzangolab/vue-layout",
-  "bugs": "https://github.com/dzangolab/vue-locale-switcher/issues"
+  "bugs": "https://github.com/dzangolab/vue-locale-switcher/issues",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
 }
