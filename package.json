@@ -1,6 +1,6 @@
 {
   "name": "@dzangolab/vue-layout",
-  "version": "0.3.0",
+  "version": "2.0.0-rc.1",
   "description": "",
   "author": {
     "name": "Olivier Pichon",
@@ -9,7 +9,7 @@
   },
   "main": "./dist/layout.common.js",
   "scripts": {
-    "build": "vue-cli-service build --target lib --name layout ./src/index.js",
+    "build": "vue-cli-service build --target lib --name layout ./lib/index.js",
     "commitlint": "commitlint --edit $1",
     "lint": "vue-cli-service lint",
     "prerelease": "yarn run test",
