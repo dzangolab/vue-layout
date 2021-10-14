@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import {createRouter, createWebHistory} from 'vue-router'
 
 const About = () => import(/* webpackChunkName: "accordion" */ '@/views/About.vue')
 const Home = () => import(/* webpackChunkName: "home" */ '@/views/Home.vue')

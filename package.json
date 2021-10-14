@@ -1,6 +1,6 @@
 {
   "name": "@dzangolab/vue-layout",
-  "version": "2.0.0-rc.1",
+  "version": "2.0.0-rc.3",
   "description": "",
   "author": {
     "name": "Olivier Pichon",
@@ -13,7 +13,7 @@
     "commitlint": "commitlint --edit $1",
     "lint": "vue-cli-service lint",
     "prerelease": "yarn run test",
-    "prepublishOnly": "yarn run lint && yarn run test && yarn run build",
+    "prepublishOnly": "yarn run lint && yarn run test --passWithNoTests && yarn run build",
     "release": "standard-version",
     "serve": "vue-cli-service serve",
     "test": "yarn run test:unit",
@@ -53,7 +53,7 @@
     "*.js",
     "dist/*",
     "public/*",
-    "src/*"
+    "lib/*"
   ],
   "keywords": [
     "vuejs",
