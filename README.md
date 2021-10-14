@@ -4,6 +4,7 @@
 Requirements
 ------------
 
+* Vue >= 3.0
 
 Installation
 ------------
