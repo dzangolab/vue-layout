@@ -62,7 +62,10 @@
     "layout"
   ],
   "license": "MIT",
-  "repository": "github:dzangolab/vue-layout",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dzangolab/vue-layout.git"
+  }
   "homepage": "https://github.com/dzangolab/vue-layout",
   "bugs": "https://github.com/dzangolab/vue-layout/issues"
 }
