@@ -1,6 +1,6 @@
 <template>
   <Page
-    contentClass="about"
+    content-class="about"
     subtitle="Demo about page"
     title="About us"
   >
