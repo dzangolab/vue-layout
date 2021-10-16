@@ -24,8 +24,8 @@
     "*.js",
     "*.ts",
     "dist/*",
-    "public/*",
-    "lib/*"
+    "lib/*",
+    "public/*"
   ],
   "scripts": {
     "build": "vue-cli-service build --target lib --name layout ./lib/index.js",
@@ -50,7 +50,6 @@
     "@vue/test-utils": "^2.0",
     "babel-eslint": "^10.0",
     "babel-jest": "^26.0",
-    "bootstrap": "^5.1",
     "core-js": "^3.6",
     "eslint": "^7.32, < 8.0",
     "eslint-plugin-import": "^2.20",
@@ -59,6 +58,7 @@
     "eslint-plugin-vue": "^7.7",
     "husky": "7.0",
     "node-sass": "^6.0",
+    "normalize-css": "^2.3.1",
     "sass-loader": "^10, < 11",
     "standard-version": "^9.3",
     "vue": "^3.2",

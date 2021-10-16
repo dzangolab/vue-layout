@@ -1,11 +1,16 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~normalize-css/normalize.css";
 
 html {
+  box-sizing: border-box;
   color: #2c3e50;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   font-size: 20px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 header, footer, main {
