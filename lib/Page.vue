@@ -22,8 +22,7 @@
 </template>
 
 <script>
-import PageTitle from './PageTitle'
-
+import PageTitle from './components/PageTitle'
 import './assets/page.scss'
 
 export default {

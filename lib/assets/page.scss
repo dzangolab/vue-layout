@@ -33,6 +33,14 @@
       @media (min-width: 576px) {
         text-align: left;
       }
+
+      .page__subtitle {
+        display: block;
+        font-size: 65%;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        opacity: 0.5;
+      }
     }
   }
 }

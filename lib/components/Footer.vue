@@ -52,10 +52,10 @@ export default {
 
 <style scoped>
 footer {
-  align-items: flex-end;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  font-size: 0.9rem;
+  font-size: 0.65rem;
   justify-content: flex-start;
   padding: 1rem;
   text-align: center;
@@ -64,6 +64,7 @@ footer {
 
 @media (min-width: 768px) {
   footer {
+    align-items: flex-end;
     flex-direction: row;
     justify-content: space-between;
     padding: 1rem 2rem;
