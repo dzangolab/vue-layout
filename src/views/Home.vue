@@ -1,7 +1,7 @@
 <template>
   <Page
-    contentClass="home"
-    subtitle="Demo home page"
+    content-class="home"
+    subtitle="Demo Home page"
     title="Welcome"
   >
     <h2>Lorem ipsum</h2>

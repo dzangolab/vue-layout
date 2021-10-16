@@ -1,7 +1,7 @@
 <template>
   <Page
     contentClass="about"
-    subtitle="Demo aboutpage"
+    subtitle="Demo about page"
     title="About us"
   >
     <p>Enim parturient class aenean blandit condimentum consectetur habitant ut commodo nisl ullamcorper nostra sit parturient a nulla ut netus scelerisque per est montes consequat pretium penatibus litora. At mus adipiscing ante parturient a est tempor pretium consectetur condimentum accumsan quisque adipiscing natoque sed. Vestibulum id id rutrum fringilla fringilla potenti duis a risus ac cum commodo porta vestibulum facilisi facilisi fames class a suspendisse. Quis nisi eros condimentum parturient phasellus mattis dui parturient dis eros adipiscing consectetur aliquet torquent venenatis penatibus orci rhoncus a suspendisse senectus dis convallis auctor etiam ad cursus. Aliquet phasellus dui imperdiet facilisi litora massa donec a quisque etiam netus a eget venenatis consequat semper malesuada suscipit metus ad ridiculus praesent feugiat pulvinar. Accumsan malesuada et eu auctor suspendisse orci ridiculus a neque vestibulum suscipit parturient eu ultricies fermentum vestibulum nisi in consectetur suspendisse eros erat quisque elit et.</p>

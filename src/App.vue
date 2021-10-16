@@ -2,8 +2,8 @@
   <LayoutBroker
     :current="$route.meta?.layout"
     :layouts="layouts"
-    :layoutClasses="$route.meta.layoutClasses"
-    logoAlt="Dzango logo"
+    :layout-classes="$route.meta.layoutClasses"
+    logo-alt="Dzango logo"
   >
     <router-view />
   </LayoutBroker>
