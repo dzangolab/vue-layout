@@ -4,9 +4,11 @@ module.exports = {
     es6: true,
     node: true
   },
+
   extends: [
     'plugin:vue/recommended'
   ],
+
   overrides: [
     {
       env: {
@@ -18,12 +20,20 @@ module.exports = {
       ]
     }
   ],
+
   parserOptions: {
-    parser: 'babel-eslint'
+    parser: '@typescript-eslint/parser'
   },
+
   root: true,
+
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'warn',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'warn',
-  }
+  },
+
+  'extends': [
+    'plugin:vue/recommended',
+    '@vue/typescript'
+  ]
 }
