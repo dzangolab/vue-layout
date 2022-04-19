@@ -4,6 +4,7 @@
 Requirements
 ------------
 
+* Vue >= 3.0
 
 Installation
 ------------
@@ -17,28 +18,43 @@ yarn add @dzangolab/vue-layout
 ```
 
 
-Usage (Global)
+Usin the LayoutBroker
 --------------
 
 In your app's `main.js`:
 
 ```
-import {Page} from '@dzangolab/vue-layout'
+import layout from '@dzangolab/vue-layout'
 
 ...
 
-Vue.component('Page', Page)
+Vue.use(layout)
 ```
 
+In your app's `App.vue` component:
 
-Usage (in component)
+```
+<template>
+  <LayoutBroker>
+    <router-view />
+  </LayoutBroker>
+</template>
+
+<script>
+...
+</script>
+```
+
+Using the Page component
 --------------------
+
+Inside any of your components that represents a page:
 
 ```
 <template>
   <Page
-    :loading="loading"
     contentClass="contentClass"
+    subtitle="subtitle"
     title="Page title"
   >
     <template v-slot:toolbar>
@@ -56,31 +72,17 @@ Usage (in component)
 </template>
 
 <script>
-import {Page} from '@dzangolab/vue-layout'
-
 export default {
-  components: {
-    Page
-  },
-
-  data () {
-    return {
-      loading: false
-    }
-  }
+  name: '...'
 }
 </script>
 ```
 
-## Props
+## Page component props
 
 ### `contentClass`
 
 A css class set on the `page__content` part of the page, ie the wrapper element around the `content` slot.
-
-### `loading`
-
-A flag indicating whether the page is in loading status or not. If set to true, the `content` slot of the page will not be shown. Instead, the `Loading` component will be shown.
 
 ### `subtitle`
 
@@ -90,7 +92,7 @@ Text to be shown as the page's sub-title. This is rendered by default as the con
 
 Text to be displayed as the page's title. This is rendered as the content of an H1 tag.
 
-## Slots
+## Page component slots
 
 ### `content`
 
@@ -103,19 +105,3 @@ Used to render the page's sub-title.
 ### `toolbar`
 
 Used to inject a toolbar in the page title area.
-
-## Loading component
-
-The package includes a `Loading` component. This is displayed by the page component when its `loading` prop is set to `true`. The `Loading` component can be used independently inside any component.
-
-```
-<script>
-import {Loading} from '@dzangolab/vue-layout'
-
-export default {
-  components: {
-    Loading
-  }
-}
-</script>
-```
