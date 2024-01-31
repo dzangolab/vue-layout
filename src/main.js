@@ -1,12 +1,10 @@
-import Vue from 'vue'
+import { createApp } from 'vue'
 import App from './App.vue'
 import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome'
 
-Vue.config.productionTip = false
+const app = createApp(App)
 
 // font-awesome
-Vue.component('font-awesome-icon', FontAwesomeIcon)
+app.component('font-awesome-icon', FontAwesomeIcon)
 
-new Vue({
-  render: h => h(App)
-}).$mount('#app')
+app.mount('#app')
