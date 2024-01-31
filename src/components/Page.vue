@@ -1,9 +1,9 @@
 <template>
   <div class="page">
     <PageTitle
+      v-if="title !== false"
       :subtitle="subtitle"
       :title="title"
-      v-if="title !== false"
     >
       <template #subtitle>
         <slot name="subtitle" />
@@ -14,10 +14,13 @@
       </template>
     </PageTitle>
 
-    <Loading class="page__loading" v-show="loading" />
+    <Loading
+      v-show="loading"
+      class="page__loading"
+    />
     <div
-      :class="'page__content' + (contentClass ? ' ' + contentClass : '')"
       v-show="!loading"
+      :class="'page__content' + (contentClass ? ' ' + contentClass : '')"
     >
       <slot name="content" />
     </div>
@@ -31,12 +34,12 @@ import PageTitle from './PageTitle'
 import '@/assets/scss/page.scss'
 
 export default {
+
+  name: 'Page',
   components: {
     Loading,
     PageTitle
   },
-
-  name: 'Page',
 
   props: {
     contentClass: {

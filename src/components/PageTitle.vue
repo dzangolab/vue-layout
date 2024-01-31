@@ -3,10 +3,13 @@
     <h1 v-if="title">
       {{ title }}
       <slot name="subtitle">
-        <small class="text-muted" v-if="subtitle">{{ subtitle }}</small>
+        <small
+          v-if="subtitle"
+          class="text-muted"
+        >{{ subtitle }}</small>
       </slot>
     </h1>
-    <slot name="toolbar"></slot>
+    <slot name="toolbar" />
   </div>
 </template>
 

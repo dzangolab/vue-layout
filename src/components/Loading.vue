@@ -1,7 +1,11 @@
 <template>
   <div class="c-loading">
     <slot name="icon">
-      <font-awesome-icon :icon="['fas', 'spinner']" size="4x" spin />
+      <font-awesome-icon
+        :icon="['fas', 'spinner']"
+        size="4x"
+        spin
+      />
     </slot>
   </div>
 </template>
